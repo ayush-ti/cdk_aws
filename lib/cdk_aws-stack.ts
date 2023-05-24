@@ -13,7 +13,7 @@ export class CdkAwsStack extends cdk.Stack {
     const sourceBucketName = 'ayushbansal1-source';
     const destinationBucketName = 'ayushbansal1-destination';
     const cloudFrontBucketName = 'ayushbansal1-cloudfront';
-    // Create the S3 buckets
+    
     const sourceBucket = s3.Bucket.fromBucketName(this, 'SourceBucket', sourceBucketName);
     const destinationBucket = s3.Bucket.fromBucketName(this, 'DestinationBucket', destinationBucketName);
     const cloudFrontBucket = s3.Bucket.fromBucketName(this, 'CloudFrontBucket', cloudFrontBucketName);
