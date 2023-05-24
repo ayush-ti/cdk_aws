@@ -38,8 +38,8 @@ export class CdkAwsStack extends cdk.Stack {
     // resource.addMethod('POST', integration);
 
     // // Output the API Gateway endpoint URL
-    // new cdk.CfnOutput(this, 'ApiEndpoint', {
-    //   value: api.url,
-    // });
+    new cdk.CfnOutput(this, 'ApiEndpoint', {
+      value: 'https://2mmzzo4mdf.execute-api.us-east-1.amazonaws.com/track-4',
+    });
   }
 }
